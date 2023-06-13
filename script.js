@@ -112,8 +112,8 @@ function makePageForEpisodes(episodes) {
   const countDisplay = document.getElementById("countDisplay");
   countDisplay.textContent = `Displaying ${episodes.length}/${allEpisodes.length} episodes.`;
 
-  const episodesContainer = document.getElementById("episodes");
   episodesContainer.textContent = "";
   episodes.forEach(episode => {
     const card = createEpisodeCard(episode);
     episodesContainer.appendChild(card);
+  });}
